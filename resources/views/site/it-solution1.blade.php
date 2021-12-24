@@ -56,6 +56,6 @@
         </div>
     </div>
     <!--================ Blog Area end =================-->
-     <!--================réalisé par anwar mohamed elkahza =================-->
+    <!--================réalisé par anwar mohamed elkahza =================-->
 
     @endsection

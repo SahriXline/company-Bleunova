@@ -11,13 +11,7 @@
 @extends('master')
     @section('content')
  
-    <div class="container">
-            @if(session('status'))
-                 <div class="notification is-success">
-                     {{session('status')}}
-                </div>
-            @endif
-        </div>          
+   
      <!-- flash Message  form contact -->
     <!-- Contact Area Start -->
     <section class="contact-our-area section-padding-100-0" id="contact">
@@ -27,6 +21,13 @@
                     <div class="section-heading text-center">
                         <h6>Contact</h6>
                         <h4>Contact with our support</h4>
+                        <div class="container">
+                            @if(session('status'))
+                                <div class="notification is-success">
+                                  <h6> {{session('status')}}</h6> 
+                                </div>
+                            @endif
+                        </div>          
                     </div>
                 </div>
             </div>
@@ -131,4 +132,6 @@
         </div>
     </section>
     <!-- Contact Area End -->
+     <!--================réalisé par anwar mohamed elkahza =================-->
+
     @endsection

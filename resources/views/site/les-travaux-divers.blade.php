@@ -20,8 +20,8 @@
                 <div class="col-12">
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item text-center">
-                            <h2>Service</h2>
-                            <p><a href="{{ url('/') }}">Home .</a> <span>Service</span></p>
+                            <h2>Service Les Travaux Divers</h2>
+                            <p><a href="{{ url('/') }}">Home .</a> <span>Service Les Travaux Divers </span></p>
                         </div>
                     </div>
                 </div>
