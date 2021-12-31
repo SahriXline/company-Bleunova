@@ -34,7 +34,7 @@
                             <div class="col-md-6 col-lg-4 animated slideInRight">
                                 <div class="single-call-desc-content ca-mb-50">
                                 <div class="feature-img">
-                            <img class="img-fluid" src="" alt="" style=" border-radius: 8px;">
+                            <img class="img-fluid" src="{{ asset('img/expo.jpg') }}" alt="" style=" border-radius: 8px;">
                         </div>
                                 </div>
                             </div>
@@ -46,7 +46,14 @@
                             <div class="col-md-6 col-lg-8 animated slideInRight">
                                 <div class="single-call-desc-content">
                                   
-                                    <p class="text-black  mb-0 " >text</p>
+                                    <p class="text-black  mb-0 " >Al Majlis Trading is a company founded on local traditions that have evolved over many years to help us become a leading importer in Qatar. Al Majlis Trading imports
+                                                                  the highest quality products from around the world to fulfil the extensive needs of an economy experiencing unprecedented growth.
+                                  </p>
+                                  <ul>
+                                      <li>1 :text</li>
+                                      <li>2 :text</li>
+                                      <li>3 :text</li>
+                                  </ul>
                                 </div>
                             </div>
                         </div>

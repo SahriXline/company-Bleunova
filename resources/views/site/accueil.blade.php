@@ -51,7 +51,7 @@
     </div> -->
 
 
-     <!-- <div class="welcome-area bg-img bg-overlay"  style="background-image: url(img/bg-img/pexels.jpg);height:700px"  id="home"> --> -->
+     <!-- <div class="welcome-area bg-img bg-overlay"  style="background-image: url(img/bg-img/pexels.jpg);height:700px"  id="home"> --> 
      <div class="welcome-area bg-img bg-overlay"  style="background-image: url(img/bg-img/pexels.jpg);height:700px"  id="home">
         <div class="hero-slider owl-carousel">
        

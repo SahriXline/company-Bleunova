@@ -21,6 +21,18 @@
                     <div class="section-heading text-center">
                         <h6>Contact</h6>
                         <h4>Contact with our support</h4>
+                       
+                       @if(Session::has('error'))
+                       <div class="alert alert-danger">
+                           {{Session::get('error')}}
+                       </div>
+                       @endif
+                       @if(Session::has('success'))
+                       <div class="alert alert-success">
+                           {{Session::get('success')}}
+                       </div>
+                       @endif
+                       
                         <div class="container">
                             @if(session('status'))
                                 <div class="notification is-success">
@@ -102,6 +114,17 @@
                                             </div>
                                             @if($errors->has('email'))
                                                  <p class="help is-danger">{{$errors->first('email')}}</p>
+                                            @endif
+                                        </div>
+                                       
+                                        <!-- Form Group -->
+                                         <!-- Form Group -->
+                                         <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="subject" value="{{old('subject')}}" class="input  @if($errors->has('subject'))is-danger @endif"  id="subject" placeholder="Subject" required>
+                                            </div>
+                                            @if($errors->has('subject'))
+                                                 <p class="help is-danger">{{$errors->first('subject')}}</p>
                                             @endif
                                         </div>
                                        

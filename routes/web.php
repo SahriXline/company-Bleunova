@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/menublade', function () {
+    return view('menublade');
+});
 
 Route::get('/','SiteController@index');
 Route::get('/services',"SiteController@services");
@@ -41,7 +41,8 @@ Route::get('/service/it/1',"ServicesController@pageIt1");
 Route::get('/service/it/2',"ServicesController@pageIt2");
 Route::get('/service/it/3',"ServicesController@pageIt3");
 
-
+// Route::get('/email', [App\Http\Controllers\EmailController::class, 'create']);
+// Route::post('/email', [App\Http\Controllers\EmailController::class, 'sendEmail'])->name('send.email');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

@@ -8,7 +8,7 @@ use  App\Models\Message;
 use  App\Models\Post;
 use  App\Models\Page;
 use  App\Models\Service;
-
+use Illuminate\Support\Facades\Mail;
 // test
 class SiteController extends Controller
 {
@@ -61,18 +61,48 @@ class SiteController extends Controller
    $data= $request->validate([
       'name'=>'required',
       'email'=>'required|email',
-      'message'=>'required|min:5|max:300',
+      'subject'=>'required|min:5|max:60',
+      'message'=>'required|min:5|max:300'
 
    ]);
-    $message= new Message();
-    $message->name= $data['name'];
-    $message->email= $data['email'];
-    $message->message= $data['message'];
+    // $message= new Message();
+    // $message->name= $data['name'];
+    // $message->email= $data['email'];
+    // $message->message= $data['message'];
 
-    $message->save();
+    // $message->save();
+    if($this->isOnline()){
+      // return "connected";
+      $mail_data=[
+        'recipient'=>'anwarbleunova@gmail.com',
+        'formEmail'=>$request->email,
+        'formName'=>$request->name,
+        'subject' =>$request->subject,
+        "body"=>$request->message
+      ];
+      Mail::send('email-template', $mail_data, function($message) use ($mail_data) {
+        $message->to($mail_data['recipient'])
+                 ->from($mail_data['formEmail'],$mail_data['formName'])
+                 ->subject($mail_data['subject']);
+      });
+
+      return back()->with(['success' => 'Email successfully sent!']);
+  
+     
+    }else{
+      return redirect()->back()-withInput()->with('error','Check your internet connection');
+    }
 
     return redirect('/contact')->with('status',"Salut $message->name , votre demande sera dans quelques instant.");    
  }
+ public function isOnline($site="https://www.youtube.com/"){
+   if(@fopen($site, "r")){
+     return true;
+   }else{
+     return false;
+   }
+ }
+
   
   
   public function show($slug){
