@@ -1,12 +1,5 @@
 
-<!-- branche navarre service( extend=> menu.blade.php) -->
-<!-- @section('menu')
-				@foreach($categories as $categorie)                 
-                        <li><a href="{{url('/services/'.$categorie->slug)}}">{{$categorie->name}}</a></li>
-                @endforeach
-    @endsection -->
 
-	<!--end=> branche navarre service  -->
 
 @extends('master')
     @section('content')

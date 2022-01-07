@@ -1,13 +1,7 @@
 
 
                                                 
-<!-- branche navarre service( extend=> menu.blade.php) -->
-<!-- @section('menu')
-				@foreach($categories as $categorie)                 
-                        <li><a href="{{url('/services/'.$categorie->slug)}}">{{$categorie->name}}</a></li>
-                @endforeach
-    @endsection -->
-	<!--end=> branche navarre service  -->
+
 @extends('master')
     @section('content')
  
@@ -67,7 +61,7 @@
                                 </div>
                                 <div class="contact-info">
                                     <h5 class="mb-1">Call Us On</h5>
-                                    <p class="mb-0">+8801254695</p>
+                                    <p class="mb-0">+0611111</p>
                                 </div>
                             </div>
                         </div>

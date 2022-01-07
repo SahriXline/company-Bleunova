@@ -1,57 +1,8 @@
-<!-- <style>
-   .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-</style> -->
-<!-- branche navarre service( extend=> menu.blade.php) -->
-<!-- @section('menu')
-				@foreach($categories as $categorie)                 
-                        <li><a href="{{url('/services/'.$categorie->slug)}}">{{$categorie->name}}</a></li>
-                @endforeach
-    @endsection -->
 
-	<!--end=> branche navarre service  -->
 @extends('master')
     @section('content')
 
-    <!-- Welcome-area-start -->
-    <!-- <div class="welcome-area bg-img bg-overlay"  style="background-image: url(img/bg-img/pexels.jpg);height:700px"  id="home"> -->
-    <!-- <div class="welcome-area bg-img bg-overlay"  style="background-image: url(img/bg-img/pexels.jpg);height:700px"  id="home">
-        <div class="hero-slider owl-carousel">
-        @foreach($categories as $categorie)
-            <div class="single-slider">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="welcome-content home-slider mt-we-70 mt-sm-100">
-                                <h3 class="wow fadeInUp" data-wow-delay="0.4s">{{$categorie->name}}.</h3>
-                                <h5 class="wow fadeInUp" data-wow-delay="0.6s">{{$categorie->description}}.</h5>
-                                <div class="slider-btn mt-30">
-                                    <a class="boxed-btn" href="{{url('/services/'.$categorie->slug)}}"><span>Start Now</span></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="welcome-thumb-slider mt-70">
-                            <a href="{{url('/services/'.$categorie->slug)}}">
-                                <img  style="width:auto;height:410px;background-color:#0a5ea2;border-radius: 5%;" src="{{ asset('/storage/'.$categorie->image)}}" alt="" >
-                            </a>    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endforeach
-           
-        </div>
-    </div> -->
-
-
-     <!-- <div class="welcome-area bg-img bg-overlay"  style="background-image: url(img/bg-img/pexels.jpg);height:700px"  id="home"> --> 
+    
      <div class="welcome-area bg-img bg-overlay"  style="background-image: url(img/bg-img/pexels.jpg);height:700px"  id="home">
         <div class="hero-slider owl-carousel">
        
@@ -60,7 +11,7 @@
                     <div class="row h-100 align-items-center">
                         <div class="col-lg-6">
                             <div class="welcome-content home-slider mt-we-70 mt-sm-100">
-                                <h3 class="wow fadeInUp" data-wow-delay="0.4s">Export Import</h3>
+                                <h3 class="wow fadeInUp" data-wow-delay="0.4s">Import Export </h3>
                                 <h5 class="wow fadeInUp" data-wow-delay="0.6s">...</h5>
                                 <div class="slider-btn mt-30">
                                     <a class="boxed-btn" href="service/exportimport"><span>Start Now</span></a>
@@ -71,7 +22,7 @@
                         <div class="col-lg-6">
                             <div class="welcome-thumb-slider mt-70">
                             <a href="service/exportimport">
-                                <img  style="width:auto;height:410px;background-color:#0a5ea2;border-radius: 5%;" src="{{ asset('img/import.jpg') }}" alt="" >
+                                <img  style="width:120%;height:410px;background-color:#0a5ea2;border-radius: 5%;" src="{{ asset('img/expo_impo.jpg') }}" alt="" >
                             </a>    
                             </div>
                         </div>
@@ -86,8 +37,8 @@
                     <div class="row h-100 align-items-center">
                         <div class="col-lg-6">
                             <div class="welcome-content home-slider mt-we-70 mt-sm-100">
-                                <h3 class="wow fadeInUp" data-wow-delay="0.4s">Les Travaux Divers</h3>
-                                <h5 class="wow fadeInUp" data-wow-delay="0.6s">....</h5>
+                                <h3 class="wow fadeInUp" data-wow-delay="0.4s"> Construction FitOut</h3>
+                                <h5 class="wow fadeInUp" data-wow-delay="0.6s">The Fit-Out Construction Process and Different Types of Fit-Outs</h5>
                                 <div class="slider-btn mt-30">
                                     <a class="boxed-btn" href="service/travaux"><span>Start Now</span></a>
                                 </div>
@@ -97,7 +48,7 @@
                         <div class="col-lg-6">
                             <div class="welcome-thumb-slider mt-70">
                             <a href="service/travaux">
-                                <img  style="width:auto;height:410px;background-color:#0a5ea2;border-radius: 5%;" src="{{ asset('img/travaux.jpg') }}" alt="" >
+                                <img  style="width:auto;height:410px;background-color:#0a5ea2;border-radius: 5%;" src="{{ asset('img/home.jpg') }}" alt="" >
                             </a>    
                             </div>
                         </div>
@@ -163,37 +114,7 @@
                 </div>
             </div>
 
-            <!-- <div class="row">
-                <div class="col-12">
-                    <div class="content-box">
-                        <div class="inner-box">
-                            <div class="row justify-content-center">
-                            
-                                @foreach($categories as $categorie)
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="single-item">
-                                        <div class="icon-box"> 
-                                        <a href="{{url('/service/'.$categorie->slug)}}">    
-                                            <img src="{{ asset('/storage/'.$categorie->image)}}" width="90" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3"/>
-                                                <path d="M12 20h9"></path>
-                                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-                                        </a>
-                                            </div>
-                                        <div class="single-item-text centered">
-                                            <h5><a href="#">{{$categorie->name}}.</a></h5>
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                                @endforeach
-                                
-                                
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+          
 
             <div class="row">
                 <div class="col-12">
@@ -419,31 +340,7 @@
     
 
     
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.nav.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.animatedheadline.min.js"></script>
-    <script src="js/date-time.js"></script>
-    <script src="js/bundle.js"></script>
-
-    <!-- Custom js-->
-    <script src="js/main.js"></script>
+  
 
 
 	@endsection

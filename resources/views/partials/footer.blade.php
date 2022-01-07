@@ -1,19 +1,4 @@
 
-<!-- Contact Action Area -->
-     <!--================réalisé par anwar mohamed elkahza =================-->
-<!-- <div class="contact-action-area section-padding-50 bg-overlay bg-img" style="background-image: url({{ asset('img/bg-img/10.jpg') }})">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <div class="btn">
-                        
-                        <a href="https://api.whatsapp.com/send?phone=212668044603&text=Bluenova"><p style="color: #000000;background-color: #ffffff;">(+212) 668044603</p></a> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Contact Action Area -->
 
     <!-- Footer Contact Area -->
     <div class="footer-contact-area section-padding-100-50">

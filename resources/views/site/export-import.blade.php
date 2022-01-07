@@ -1,12 +1,5 @@
 
-<!-- branche navarre service( extend=> menu.blade.php) -->
-<!-- @section('menu')
-				@foreach($categories as $categorie)                 
-                        <li><a href="{{url('/posts/'.$categorie->slug)}}">{{$categorie->name}}</a></li>
-                @endforeach
-    @endsection -->
 
-	<!--end=> branche navarre service  -->
 @extends('master')
     @section('content')
    
@@ -14,7 +7,7 @@
     <!-- Header Area End -->
 
     <!-- Breadcrumb-start -->
-    <section class="breadcrumb breadcrumb_bg bg-overlay bg-img" style="background-image: url(img/bg-img/10.jpg);">
+    <section class="breadcrumb breadcrumb_bg bg-overlay bg-img" style="background-image: url({{url('img/banner2.jpg')}});">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -42,8 +35,11 @@
                         </div>
                         <!-- Single Feature Text -->
                         <div class="feature-content-text">
-                        <h4>title</h4>
-                            <p class="mb-0">text........................<a href="{{ url('service/exportimport/1')}}">Read more</a></p>
+                        <h4>Services</h4>
+                            <p class="mb-0">"BlueNova Import Export" has the goal to represent your 
+                                products on a national and international level. Thanks to the wide network of partners around the world, your import 
+                                and export of food products will surely be successful with us. Our customer list is always updated: we do not stop expanding
+                                ......<a href="{{ url('service/exportimport/1')}}">Read more</a></p>
                         </div>
                     </div>
                 </div>
@@ -57,8 +53,11 @@
                         </div>
                         <!-- Single Feature Text -->
                         <div class="feature-content-text">
-                        <h4>title</h4>
-                            <p class="mb-0">text........................<a href="{{ url('service/exportimport/2')}}">Read more</a></p>
+                        <h4>Quick assistance</h4>
+                            <p class="mb-0">BlueNova  Import Export is at your full disposal for the 
+                                import or export of food products at any time. For questions and updates concerning your business, please contact our customer support and information desk. We will be happy to help you and respond to your requests as soon as possible.
+                                ......
+                                 <a href="{{ url('service/exportimport/2')}}">Read more</a></p>
                         </div>
                     </div>
                 </div>
@@ -72,101 +71,16 @@
                         </div>
                         <!-- Single Feature Text -->
                         <div class="feature-content-text">
-                        <h4>title</h4>
-                            <p class="mb-0">text........................<a href="{{ url('service/exportimport/3')}}">Read more</a></p>
+                        <h4>Professional team</h4>
+                            <p class="mb-0">BlueNova Import Export team has all the necessary skills for the import and export of food products.
+                                 We protect the image of companies that turn to us with a proposal 
+                                 for importing or exporting food products and we are convinced that we fully protect their interests......
+                                 <a href="{{ url('service/exportimport/3')}}">Read more</a></p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Single Feature area -->
-                <!-- <div class="col-md-6 col-lg-4">
-                    <div class="single-feature-area text-center">
-                      
-                        <div class="feature-icon">
-                            <img src="img/icon-img/4.svg" alt="">
-                        </div>
-                      
-                        <div class="feature-content-text">
-                            <h4>Drag &amp; Drop Building</h4>
-                            <p class="mb-0">Add, delete and move elements around on the front end of your website. No coding and no confusing back end options.</p>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- Single Feature area -->
-                <!-- <div class="col-md-6 col-lg-4">
-                    <div class="single-feature-area text-center">
-                       
-                        <div class="feature-icon">
-                            <img src="img/icon-img/5.svg" alt="">
-                        </div>
-                       
-                        <div class="feature-content-text">
-                            <h4>Drag &amp; Drop Building</h4>
-                            <p class="mb-0">Add, delete and move elements around on the front end of your website. No coding and no confusing back end options.</p>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- Single Feature area -->
-                <!-- <div class="col-md-6 col-lg-4">
-                    <div class="single-feature-area text-center">
-                      
-                        <div class="feature-icon">
-                            <img src="img/icon-img/6.svg" alt="">
-                        </div>
-                       
-                        <div class="feature-content-text">
-                            <h4>Drag &amp; Drop Building</h4>
-                            <p class="mb-0">Add, delete and move elements around on the front end of your website. No coding and no confusing back end options.</p>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- Single Feature area -->
-                <!-- <div class="col-md-6 col-lg-4">
-                    <div class="single-feature-area text-center">
-                      
-                        <div class="feature-icon">
-                            <img src="img/icon-img/7.svg" alt="">
-                        </div>
-                      
-                        <div class="feature-content-text">
-                            <h4>Drag &amp; Drop Building</h4>
-                            <p class="mb-0">Add, delete and move elements around on the front end of your website. No coding and no confusing back end options.</p>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- Single Feature area -->
-                <!-- <div class="col-md-6 col-lg-4">
-                    <div class="single-feature-area text-center">
-                      
-                        <div class="feature-icon">
-                            <img src="img/icon-img/8.svg" alt="">
-                        </div>
-                        
-                        <div class="feature-content-text">
-                            <h4>Drag &amp; Drop Building</h4>
-                            <p class="mb-0">Add, delete and move elements around on the front end of your website. No coding and no confusing back end options.</p>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- Single Feature area -->
-                <!-- <div class="col-md-6 col-lg-4">
-                    <div class="single-feature-area text-center">
-                      
-                        <div class="feature-icon">
-                            <img src="img/icon-img/9.svg" alt="">
-                        </div>
-                      
-                        <div class="feature-content-text">
-                            <h4>Drag &amp; Drop Building</h4>
-                            <p class="mb-0">Add, delete and move elements around on the front end of your website. No coding and no confusing back end options.</p>
-                        </div>
-                    </div>
-                </div> -->
+              
             </div>
         </div>
     </div>
