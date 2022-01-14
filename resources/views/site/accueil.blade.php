@@ -204,6 +204,7 @@
                 <!-- Single Product Build -->
                 <div class="col-md-6 col-lg-4  animate__fadeInUp  wow zoomIn" data-wow-delay="0.4s">
                     <div class="single-product-build-area">
+                        
                         <!-- Product Thumb -->
                         <div class="product-thumb home-3">
                             <img src="img/icon-img/11.svg" alt="">
